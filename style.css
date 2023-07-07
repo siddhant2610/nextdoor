@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+/* css for the new nav bar */
+
+.placeholder-search {
+    text-align: center;
+    font-size: 14px;
+}
+
+.navbar-new {
+    background-color: #1a1a1a;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    padding: 10px;
+    height: 170px;
+}
+
+.navbar-brand-new {
+    padding-bottom: 7em;
+    width: 20%;
+    height: 20%;
+    font-weight: bold;
+    color: #333;
+    margin-right: 20px;
+}
+
+.search-bar-new {
+    color: black;
+    background-color: white;
+    width: 3em;
+    height: 4em;
+    border: none;
+    transition: 0.3s;
+}
+
+#img-nav {
+    width: 35%;
+    transition: 0.5s;
+}
+
+.login-button-new,
+.signup-button-new {
+    font-family: 'Righteous', sans-serif;
+    font-size: 0.9em;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: white;
+    color: linear-gradient(to right, #000000, #434343);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.categories-dropdown-new {
+    position: relative;
+    display: inline-block;
+    font-family: 'Righteous', sans-serif;
+    font-size: 0.9em;
+    color: linear-gradient(to right, #000000, #434343);
+    background-color: white;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.categories-dropdown-content-new {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.categories-dropdown-new:hover .categories-dropdown-content-new {
+    display: block;
+}
+
+.categories-dropdown-content-new a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.categories-dropdown-content-new a:hover {
+    background-color: #f2f2f2;
+}
+
+.home-button {
+    text-align: center;
+}
+
+.home-button-inside {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 20px 30px 20px 30px;
+    font-family: 'righteous', cursive;
+    font-size: 20px;
+}
+
+.home-button-inside:hover {
+    background-color: rgb(33, 33, 33);
+    transition: 0.3s;
+}
+
+.home-button:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
+
+
+/* Added styles for desktop screens */
+@media (min-width: 700px) {
+
+    .navbar-new {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-brand-new {
+        margin-right: 40px;
+    }
+
+    .search-bar-new {
+        width: 150px;
+        /* Adjusted width */
+        flex-grow: 1;
+        margin-right: 40px;
+    }
+
+    .login-button-new,
+    .signup-button-new {
+        margin-right: 20px;
+    }
+
+    .categories-dropdown-new {
+        margin-right: 40px;
+    }
+
+    .hamburger-menu-new {
+        display: none;
+    }
+}
+
+/* Added styles for mobile screens */
+@media (max-width: 700px) {
+    .homebtn-buypage {
+        height: 200px;
+        padding-left: 100px;
+        margin-top: auto;
+    }
+
+    .navbar-new {
+        margin-bottom: 200px;
+        display: grid;
+        align-items: center;
+        height: 26em;
+        padding-left: 3em;
+    }
+
+    .navbar-brand-new {
+        margin-right: 20px;
+    }
+
+    .search-bar-new {
+        width: 100px;
+        margin-right: 10px;
+    }
+
+    .login-button-new,
+    .signup-button-new {
+        width: 100px;
+    }
+
+    .categories-dropdown-new {
+        width: 100px;
+    }
+
+    .nav-inner {
+        
+        display: grid;
+        padding-left: 6em;
+    }
+
+    /* .hamburger-menu-new {
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+    }
+
+    .hamburger-menu-new span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin-bottom: 5px;
+    } */
+}
